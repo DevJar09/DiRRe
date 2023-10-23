@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DiRRe</title>
+    <title>DiRRe | Typhoon</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://bootswatch.com/5/yeti/bootstrap.min.css">
 </head>
@@ -51,6 +51,21 @@
         </div>
       </nav>
     <style>
+      .card img {
+                border-radius: 10px; /* Add border radius to all images inside cards */
+        }
+            .center-button {
+                display: block;
+                margin: 3px auto;
+                width: 100%;
+                border-radius: 10px;
+        }
+            .brand-img {
+                max-height: 30px;
+        }
+            .navbar-toggler-icon {
+            font-size: 1rem;
+        }
         /* Custom CSS to center the cards on small screens */
         @media (max-width: 768px) {
             .center-cards {
@@ -72,95 +87,70 @@
                 margin-top: 10px;
         }
         }
-            .center-button {
-                display: block;
-                margin: 3px auto;
-                width: 100%;
-                border-radius: 10px;
-        }
-            .brand-img {
-                max-height: 30px;
-        }
-            .navbar-toggler-icon {
-            font-size: 1rem;
-        }
 
     </style>
-
     <div class="container mt-4">
         <div class="row center-cards">
             <!-- First Card -->
-<div class="col-md-4">
-    <div class="card bg-light mb-3" style="max-width: 20rem;">
-        <div class="card-body">
-            <img src="images/earthquake.png" class="card-img-top" alt="Image 1">
-            <h4 class="card-title">Earthquake</h4>
-            <p class="card-text">Seismic events caused by tectonic activity, potentially causing significant damage.</p>
-            <a href="earthquake.html" class="btn btn-primary center-button">View</a>
-        </div>
-    </div>
-</div> <!-- Close the first card div -->
-
-<!-- Second Card -->
-<div class="col-md-4">
-    <div class="card bg-light mb-3" style="max-width: 20rem;">
-        <div class="card-body">
-            <img src="images/typhoon.jpg" class="card-img-top" alt="Image 2">
-            <h4 class="card-title">Typhoon</h4>
-            <p class="card-text">A typhoon is a powerful tropical cyclone in the western Pacific Ocean.</p>
-            <a href="typhoon.html" class="btn btn-primary center-button">View</a>
-        </div>
-    </div>
-</div> <!-- Close the second card div -->
-
-<!-- Third Card -->
-<div class="col-md-4">
-    <div class="card bg-light mb-3" style="max-width: 20rem;">
-        <div class="card-body">
-            <img src="images/fire.webp" class="card-img-top" alt="Image 3">
-            <h4 class="card-title">Fire Disaster</h4>
-            <p class="card-text">House fires are destructive blazes that often occur within residential buildings.</p>
-            <button type="button" class="btn btn-primary center-button">View</button>
-        </div>
-    </div>
-</div> <!-- Close the third card div -->
-
-
+            <div class="col-md-4">
+                <div class="card bg-light mb-3" style="max-width: 20rem; min-height: 15rem;">
+                    <div class="card-body">
+                        <img src="images/evac.webp" class="card-img-top" alt="Image 1">
+                        <h4 class="card-title">Evacuation Drill</h4>
+                        <p class="card-text">Determine the nearest exit from your location and the route you shall follow to reach exit in an emergency. Emergency evacuation signage is posted in buildings. </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Card -->
+            <div class="col-md-4">
+                <div class="card bg-light mb-3" style="max-width: 20rem; min-height: 15rem;">
+                    <div class="card-body">
+                        <img src="images/drop.png " style="max-width: 5.8rem;" class="card-img-top" alt="Image 1">
+                        <h4 class="card-title">DROP</h4>
+                        <p class="card-text">This position protects you from being knocked down and reduces your chances of being hit by falling or flying objects.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Third Card -->
+            <div class="col-md-4">
+                <div class="card bg-light mb-3" style="max-width: 20rem; min-height: 15rem;">
+                    <div class="card-body">
+                        <img src="images/cover.png" style="max-width: 5.8rem;" class="card-img-top" alt="Image 1">
+                        <h4 class="card-title">Cover</h4>
+                        <p class="card-text">Cover your head and neck with one arm and hand. If a sturdy table or desk is nearby, crawl underneath for shelter.</p>
+                    </div>
+                </div>
+            </div>
             <!-- Fourth Card -->
             <div class="col-md-4">
-                <div class="card bg-light mb-3" style="max-width: 20rem;">
+                <div class="card bg-light mb-3" style="max-width: 20rem; min-height: 15rem;">
                     <div class="card-body">
-                        <img src="images/landslide.jpeg" class="card-img-top" alt="Image 3">
-                        <h4 class="card-title">Landslide</h4>
-                        <p class="card-text">Rapid downhill movements of soil, rock, and debris triggered by heavy rainfall.</p>
-                        <button type="button" class="btn btn-primary center-button">View</button>
+                        <img src="images/hold.png" style="max-width: 5.8rem;" class="card-img-top" alt="Image 1">
+                        <h4 class="card-title">Hold</h4>
+                        <p class="card-text">Under shelter: hold on to it with one hand; be ready to move with your shelter if it shifts</p>
                     </div>
                 </div>
             </div>
-
             <!-- Fifth Card -->
             <div class="col-md-4">
-                <div class="card bg-light mb-3" style="max-width: 20rem;">
-                    <div class="card-body">
-                        <img src="images/volcano.jpg" class="card-img-top" alt="Image 3">
-                        <h4 class="card-title">Volcanic Eruption</h4>
-                        <p class="card-text">Explosive release of molten rock and ash from volcanoes, with potential hazards.</p>
-                        <button type="button" class="btn btn-primary center-button">View</button>
-                    </div>
+            <div class="card text-white bg-danger mb-3" style="max-width: 20rem;">
+                <div class="card-header">What not to do?</div>
+                <div class="card-body">
+                  <h4 class="card-title">DO NOT get in a doorway!</h4>
+                  <p class="card-text">In modern houses and buildings, doorways are no safer, and they do not protect you from flying or falling objects. Get under a table instead and do the drill!</p>
                 </div>
+              </div>
             </div>
-
-             <!-- Sixth Card -->
-             <div class="col-md-4">
-                <div class="card bg-light mb-3" style="max-width: 20rem;">
+            <!-- Sixth Card -->
+            <div class="col-md-4">
+                <div class="card text-white bg-danger mb-3" style="max-width: 20rem;">
+                    <div class="card-header">What not to do?</div>
                     <div class="card-body">
-                        <img src="images/landslide.jpeg" class="card-img-top" alt="Image 3">
-                        <h4 class="card-title">Landslide</h4>
-                        <p class="card-text">Rapid downhill movements of soil, rock, and debris triggered by heavy rainfall.</p>
-                        <button type="button" class="btn btn-primary center-button">View</button>
+                      <h4 class="card-title">DO NOT run outside!</h4>
+                      <p class="card-text">Running outside is especially dangerous, as glass, bricks, or other building components may be falling. You are much safer to stay inside and get under a table.</p>
                     </div>
+                  </div>
                 </div>
-            </div>
         </div>
     </div>
 

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DiRRe | Earthquake</title>
@@ -19,9 +19,9 @@
       </div>
     </div>
   </nav>
-    <style>
-        @media (max-width: 768px) {
-          .custom-card {
+      <style>
+@media (max-width: 768px) {
+  .custom-card {
             max-width: 100%;
         }
         .center-cards {
@@ -30,40 +30,59 @@
         justify-content: center;
         margin: 0 -15px; /* Adjust the negative margin to counteract the padding in columns */
     }
-            .card {
-                border-radius: 10px;
+}
+
+.card {
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 10px;
         }
-            .card img {
-                border-radius: 10px;
-        }
-            h1, h2, h3, h4, h5, h6, a {
-                font-weight: bold;
-        }
-            .card .card-body h4 {
-                margin-top: 10px;
-        }
-        }
-            .center-button {
-                display: block;
-                margin: 3px auto;
-                width: 100%;
-                border-radius: 10px;
-        }
-            .brand-img {
-                max-height: 30px;
-        }
-            .navbar-toggler-icon {
-            font-size: 1rem;
-        }
-        .card {
-                border-radius: 10px;
-                border: none;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-            .card img {
-                border-radius: 10px;
-        }
-        .rounded-left {
+
+.card img {
+    border-radius: 10px;
+    max-width: 95%;
+    display: block;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-link {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.card .card-body h4 {
+    margin-top: 10px;
+}
+
+.center-button {
+    display: block;
+    margin: 3px auto;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.brand-img {
+    max-height: 30px;
+}
+
+.navbar-toggler-icon {
+    font-size: 1rem;
+}
+
+.form-check-label {
+    font-size: 16px;
+}
+.rounded-left {
     border-top-left-radius: 0.50rem;
     border-bottom-left-radius: 0.50rem;
   }
@@ -154,69 +173,49 @@
   max-width: 40px;
   transform: translate3d(0, 0, 0);
 }
-    </style>
-    <div class="container mt-4">
+
+      </style>
+    <div class="container">
         <div class="row center-cards">
-            <!-- First Card -->
-            <div class="col-md-4">
-                <div class="card bg-light mb-3 custom-card">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <h3 class="card-header">Fire Disaster</h3>
                     <div class="card-body">
-                        <img src="images/dch.png" class="card-img-top" alt="Image 1">
-                        <h4 class="card-title">When you get an ALERT or FEEL SHAKING</h4>
-                        <p class="card-text">Seismic events caused by tectonic activity, potentially causing significant damage.</p>
+                        <h5 class="card-title">Disaster Preparedness</h5>
+                        <h6 class="card-subtitle text-muted">Emergency Procedures</h6>
+                    </div>
+                    <img src="images/fire-extinguisher.png" class="card-img-top " alt="Image cap">
+                    <div class="card-body">
+                      <h4>To help avoid a fire in the home, there are steps someone can take now:</h4>
+                      <p class="card-text">1) Keep items that can catch on fire at least three feet away from anything that gets hot, such as sources of heat or stoves.</p>
+                      <p class="card-text">2) Never smoke in bed.</p>
+                      <p class="card-text">3) Turn portable heaters off when leaving the room or going to sleep.</p>
+                      <h4>If a fire stars:</h4>
+                      <p class="card-text">1) Know how to safely operate a fire extinguisher</p>
+                      <p class="card-text">2) Remember to GET OUT, STAY OUT and CALL 9-1-1 or your local emergency phone number.</p>
+                      <p class="card-text">3) Yell "Fire!" several times and go outside right away. If you live in a building with elevators, use the stairs. Leave all your things where they are and save yourself.</p>
+                      <p class="card-text">4) If closed doors or handles are warm or smoke blocks your primary escape route, use your second way out. Never open doors that are warm to the touch.</p>
+                      <p class="card-text">5) If you must escape through smoke, get low and go under the smoke to your exit. Close doors behind you.</p>
+                      <p class="card-text">6) If smoke, heat or flames block your exit routes, stay in the room with doors closed. Place a wet towel under the door and call the fire department or 9-1-1. Open a window and wave a brightly coloured cloth or flashlight to signal for help.</p>
+                      <p class="card-text">7) Once you are outside, go to your meeting place and then send one person to call the fire department. If you cannot get to your meeting place, follow your family emergency communication plan.</p>
+                      <h4>DONT FORGET! If your clothes catch on fire:</h4>
+                      <img src="images/sdr.jpg" class="card-img-top " alt="Image cap">
+                      <p class="card-text">1) Know how to safely operate a fire extinguisher</p>
+                      <p class="card-text">2) Let friends and family know you’re safe.</p>
+                      <p class="card-text">3) People and animals that are seriously injured or burned should be transported to professional medical or veterinary help immediately.</p>
+                      <p class="card-text">4) Stay out of fire-damaged homes until local fire authorities say it is safe to re-enter.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="oops.html">Emergency Hontlines</a></li>
+                        <li class="list-group-item"><a href="oops.html">Feedback</a></li>
+                        <li class="list-group-item"><a href="oops.html">About</a></li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="typhoon.html" class="card-link">Typhoon</a>
+                        <a href="earthquake.html" class="card-link">Earthquake</a>
                     </div>
                 </div>
             </div>
-            <!-- Second Card -->
-            <div class="col-md-4">
-                <div class="card bg-light mb-3 custom-card">
-                    <div class="card-body">
-                        <img src="images/drop.png" style="max-width: 5.8rem;" class="card-img-top" alt="Image 1">
-                        <h4 class="card-title">DROP</h4>
-                        <p class="card-text">This position protects you from being knocked down and reduces your chances of being hit by falling or flying objects.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Third Card -->
-            <div class="col-md-4">
-                <div class="card bg-light mb-3 custom-card">
-                    <div class="card-body">
-                        <img src="images/cover.png" style="max-width: 5.8rem;" class="card-img-top" alt="Image 1">
-                        <h4 class="card-title">Cover</h4>
-                        <p class="card-text">Cover your head and neck with one arm and hand. If a sturdy table or desk is nearby, crawl underneath for shelter.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Fourth Card -->
-            <div class="col-md-4">
-                <div class="card bg-light mb-3 custom-card">
-                    <div class="card-body">
-                        <img src="images/hold.png" style="max-width: 5.8rem;" class="card-img-top" alt="Image 1">
-                        <h4 class="card-title">Hold</h4>
-                        <p class="card-text">Under shelter: hold on to it with one hand; be ready to move with your shelter if it shifts</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Fifth Card -->
-            <div class="col-md-4">
-            <div class="card text-white bg-danger mb-3 custom-card">
-                <div class="card-header">What not to do?</div>
-                <div class="card-body">
-                  <h4 class="card-title">DO NOT get in a doorway!</h4>
-                  <p class="card-text">In modern houses and buildings, doorways are no safer, and they do not protect you from flying or falling objects. Get under a table instead and do the drill!</p>
-                </div>
-              </div>
-            </div>
-            <!-- Sixth Card -->
-            <div class="col-md-4">
-                <div class="card text-white bg-danger mb-3 custom-card">
-                    <div class="card-header">What not to do?</div>
-                    <div class="card-body">
-                      <h4 class="card-title">DO NOT run outside!</h4>
-                      <p class="card-text">Running outside is especially dangerous, as glass, bricks, or other building components may be falling. You are much safer to stay inside and get under a table.</p>
-                    </div>
-                  </div>
-                </div>
         </div>
     </div>
     <br><br><br>
@@ -279,5 +278,9 @@
       });
   });
 </script>
+</body>
+</html>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

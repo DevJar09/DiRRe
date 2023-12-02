@@ -21,12 +21,15 @@
       </nav>
     <style>
         @media (max-width: 768px) {
-            .center-cards {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                margin: 0 auto;
-            }
+          .custom-card {
+            max-width: 100%;
+        }
+        .center-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 -15px; /* Adjust the negative margin to counteract the padding in columns */
+    }
             .card {
                 border-radius: 10px;
         }
@@ -158,7 +161,7 @@
         <div class="row center-cards">
             <!-- First Card -->
 <div class="col-md-4">
-    <div class="card bg-light mb-3" style="max-width: 20rem;">
+    <div class="card bg-light mb-3 custom-card">
         <div class="card-body">
             <img src="images/earthquake.png" class="card-img-top" alt="Image 1">
             <h4 class="card-title">Earthquake</h4>
@@ -169,7 +172,7 @@
 </div>
 <!-- Second Card -->
 <div class="col-md-4">
-    <div class="card bg-light mb-3" style="max-width: 20rem;">
+    <div class="card bg-light mb-3 custom-card">
         <div class="card-body">
             <img src="images/typhoon.jpg" class="card-img-top" alt="Image 2">
             <h4 class="card-title">Typhoon</h4>
@@ -181,47 +184,35 @@
 
 <!-- Third Card -->
 <div class="col-md-4">
-    <div class="card bg-light mb-3" style="max-width: 20rem;">
+    <div class="card bg-light mb-3 custom-card">
         <div class="card-body">
             <img src="images/fire.webp" class="card-img-top" alt="Image 3">
             <h4 class="card-title">Fire Disaster</h4>
             <p class="card-text">House fires are destructive blazes that often occur within residential buildings.</p>
-            <a href="oops.html" class="btn btn-primary center-button">View</a>
+            <a href="fire-disaster.html" class="btn btn-primary center-button">View</a>
         </div>
     </div>
 </div>
 
             <!-- Fourth Card -->
             <div class="col-md-4">
-                <div class="card bg-light mb-3" style="max-width: 20rem;">
+                <div class="card bg-light mb-3 custom-card">
                     <div class="card-body">
                         <img src="images/landslide.jpeg" class="card-img-top" alt="Image 3">
                         <h4 class="card-title">Landslide</h4>
                         <p class="card-text">Rapid downhill movements of soil, rock, and debris triggered by heavy rainfall.</p>
-                        <a href="oops.html" class="btn btn-primary center-button">View</a>
+                        <a href="landslide.html" class="btn btn-primary center-button">View</a>
                     </div>
                 </div>
             </div>
 
             <!-- Fifth Card -->
             <div class="col-md-4">
-                <div class="card bg-light mb-3" style="max-width: 20rem;">
+                <div class="card bg-light mb-3 custom-card">
                     <div class="card-body">
                         <img src="images/volcano.jpg" class="card-img-top" alt="Image 3">
                         <h4 class="card-title">Volcanic Eruption</h4>
                         <p class="card-text">Explosive release of molten rock and ash from volcanoes, with potential hazards.</p>
-                        <a href="oops.html" class="btn btn-primary center-button">View</a>
-                    </div>
-                </div>
-            </div>
-
-             <!-- Sixth Card -->
-             <div class="col-md-4">
-                <div class="card bg-light mb-3" style="max-width: 20rem;">
-                    <div class="card-body">
-                        <img src="images/landslide.jpeg" class="card-img-top" alt="Image 3">
-                        <h4 class="card-title">Landslide</h4>
-                        <p class="card-text">Rapid downhill movements of soil, rock, and debris triggered by heavy rainfall.</p>
                         <a href="oops.html" class="btn btn-primary center-button">View</a>
                     </div>
                 </div>

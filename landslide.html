@@ -12,10 +12,39 @@
   <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img class="brand-img" src="images/logo.png"></img></a>
-      <form class="d-flex align-items-center">
-        <input class="form-control me-sm-2 rounded-left" type="search" data-bs-theme="light" placeholder="Search">
-        <button class="btn btn-secondary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-      </form>        
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hotlines.html">Emergency Hotlines</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="feedback.html">Feedback</a>
+          </li>
+          <!--
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </li>
+          -->
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-sm-2" type="search" data-bs-theme="light" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
       </div>
     </div>
   </nav>
@@ -28,7 +57,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 0 -15px; /* Adjust the negative margin to counteract the padding in columns */
+        margin: 0 auto; /* Adjust the negative margin to counteract the padding in columns */
     }
 }
 
@@ -38,7 +67,12 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         margin-top: 10px;
         }
-
+        .center-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+    }
 .card img {
     border-radius: 10px;
     max-width: 95%;
@@ -195,19 +229,29 @@ a {
                       <p class="card-text">6) Perform a ground assessment of your property, and consult a professional for advice on appropriate preventive measures.</p>
                       <p class="card-text">7) Learn the history of landslides and debris flows in your area. Never build a home where landslides and debris flows have occurred in the past. They are likely to occur again.</p>
                       <h4>Minimize hazards</h4>
-                      <p class="card-text">1) Know how to safely operate a fire extinguisher</p>
-                      <p class="card-text">2) Remember to GET OUT, STAY OUT and CALL 9-1-1 or your local emergency phone number.</p>
-                      <p class="card-text">3) Yell "Fire!" several times and go outside right away. If you live in a building with elevators, use the stairs. Leave all your things where they are and save yourself.</p>
-                      <p class="card-text">4) If closed doors or handles are warm or smoke blocks your primary escape route, use your second way out. Never open doors that are warm to the touch.</p>
-                      <p class="card-text">5) If you must escape through smoke, get low and go under the smoke to your exit. Close doors behind you.</p>
-                      <p class="card-text">6) If smoke, heat or flames block your exit routes, stay in the room with doors closed. Place a wet towel under the door and call the fire department or 9-1-1. Open a window and wave a brightly coloured cloth or flashlight to signal for help.</p>
-                      <p class="card-text">7) Once you are outside, go to your meeting place and then send one person to call the fire department. If you cannot get to your meeting place, follow your family emergency communication plan.</p>
-                      <h4>DONT FORGET! If your clothes catch on fire:</h4>
-                      <img src="images/sdr.jpg" class="card-img-top " alt="Image cap">
-                      <p class="card-text">1) Know how to safely operate a fire extinguisher</p>
-                      <p class="card-text">2) Let friends and family know you’re safe.</p>
-                      <p class="card-text">3) People and animals that are seriously injured or burned should be transported to professional medical or veterinary help immediately.</p>
-                      <p class="card-text">4) Stay out of fire-damaged homes until local fire authorities say it is safe to re-enter.</p>
+                      <p class="card-text">1) Plant ground cover on slopes. Use erosion-preventing plants such as yucca, bamboo, vetiver grass, etc.</p>
+                      <p class="card-text">2) If possible, build retaining walls, channels or deflection walls around your home.</p>
+                      <h4>Be familiar with landslide and debris flow warning signs</h4>
+                      <p class="card-text">1) New cracks appear in plaster, tile, brick, foundations, sidewalks, etc.</p>
+                      <p class="card-text">2) Doors and windows stick or jam for the first time.</p>
+                      <p class="card-text">3) Outside walls, walkways or stairs pull away from the building.</p>
+                      <p class="card-text">4) Underground utility lines break.</p>
+                      <p class="card-text">5) Water breaks through the ground surface in new locations.</p>
+                      <p class="card-text">6) A faint rumbling sound is noticeable and increases in volume.</p>
+                      <p class="card-text">7) The ground slopes downward and may begin to shift.</p>
+                      <p class="card-text">8) Fences, utility poles, decks, floors, retaining walls and trees tilt or move.</p>
+                      <h4>During a landslide/debris flow:</h4>
+                      <p class="card-text">1) Be prepared to evacuate and do so immediately if necessary.</p>
+                      <p class="card-text">2) If you are inside, remain where you are and take cover under a sturdy piece of furniture.</p>
+                      <p class="card-text">3) If you are outside, run to the nearest high ground away from the landslide or debris flow.</p>
+                      <p class="card-text">4) If escape is not possible, curl into a tight ball to protect your head.</p>
+                      <h4>After a landslide/debris flow:</h4>
+                      <p class="card-text">1) Stay away from the slide area. There could be additional slides.</p>
+                      <p class="card-text">2) Remember that flooding may occur after a landslide or debris flow.</p>
+                      <p class="card-text">3) Help injured or trapped people. Do not move seriously injured people unless they are in immediate danger of death or further injury. Call for help.</p>
+                      <p class="card-text">4) Leave the house if you smell gas or chemical fumes.</p>
+                      <p class="card-text">4) Check for damage to walls, the foundation, the electrical system and water lines.</p>
+
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"><a href="oops.html">Emergency Hontlines</a></li>
@@ -241,9 +285,9 @@ a {
                 </a>
               </li>
               <li>
-                <a href="#profile">
-                  <i class="fas fa-user custom-icon"></i>
-                  <span>Profile</span>
+                <a href="feedback.html">
+                  <i class="far fa-comment custom-icon"></i>
+                  <span>Feedback</span>
                 </a>
               </li>
               <li>
@@ -253,7 +297,7 @@ a {
                 </a>
               </li>
             </ul>
-          </nav>   
+          </nav>  
         </div>
       </div>
     </div>
@@ -284,7 +328,5 @@ a {
 </script>
 </body>
 </html>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
